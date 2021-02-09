@@ -7,7 +7,7 @@ fn main() {
 
     let secret_number = rand::thread_rng().gen_range(1, 101);
 
-    println!("$：秘密号码是: {}", secret_number);
+    // println!("$：秘密号码是: {}", secret_number);
 
     loop {
         println!("$：请输入你答案，以回车键结束：");
