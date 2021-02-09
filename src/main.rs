@@ -1,7 +1,12 @@
 use std::io;
+use rand::Rng;
 
 fn main() {
     println!("=== 猜数字游戏 ===");
+
+    let secret_number = rand::thread_rng().gen_range(1, 101);
+
+    println!("秘密号码是: {}", secret_number);
 
     println!("请输入你猜的数字，以回车键结束：");
 
